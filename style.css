@@ -1,0 +1,385 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Calibri;
+}
+
+
+/* 
+******************************************************************************************
+INDEX
+******************************************************************************************
+*/
+
+
+/* HEADER */
+
+#logo{
+    width: 100px;
+    background: none;
+    position: relative;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+}
+
+.link{
+    background: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 2%;
+    list-style: none;
+    transition: all 0.5s;
+}
+
+.link a{
+    color: white;
+}
+
+.items{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+
+.link-container{
+    display: flex;
+    align-items: center;
+    background-color: black;
+}
+
+
+/* hover de links*/
+.link:hover{
+    transform: scale(1.2);
+}
+
+/* MAIN */
+
+body{
+    background-image: url(images/fordimage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-color: black;
+    background-position: center;
+}
+
+#fordimage{
+    width: 100%;
+    z-index: -1;
+}
+
+/* FORMULARIO DE CONTACTO */
+
+.contactanos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: rgb(44, 44, 44);
+    padding: 3%;
+    color: white;
+    z-index: -1;
+    transition: all 1.5s;
+
+    /* provisorio*/
+    position: absolute;
+    top: 90px;
+    left: 130px;
+}
+
+.contactanos:hover{
+    transform: translateX(30%);
+}
+
+.text{
+    margin: 8%;
+    border: none;
+    border-bottom: 2px solid white;
+    background: none;
+    color: white;
+    width: 110%;
+}
+
+::placeholder{
+    color: white;
+}
+
+#consulta{
+    text-align: center;
+}
+
+h1{
+    margin: 5%;
+    border-radius: 10px;
+}
+
+#enviar{
+    width: 100%;
+    height: 40px;
+    margin: 8%;
+    background-color: yellow;
+    transition: all 0.5s;
+}
+
+#enviar:hover{
+    transform: scale(1.1);
+}
+
+/* FOOTER */
+
+#whatsapp:hover{
+    transform: scale(1.2);
+}
+
+/* 
+******************************************************************************************
+CONTACTO.HTML
+******************************************************************************************
+*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+}
+
+main ul li{
+    margin: 15px;
+    list-style: none;
+    text-align: center;
+    width: 107%;
+    padding: 20px;
+    font-weight: bold;
+    font-family: Calibri;
+    background-color: white;
+}
+
+#contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 18px;
+}
+
+#phone-icon{
+    width: 28px;
+    position: relative;
+    top: 10px;
+    right: 12px;
+    background-color: none;
+}
+
+#email-icon{
+    width: 30px;
+    position: relative;
+    top: 10px;
+    right: 12px;
+    background-color: none;
+}
+
+/* 
+******************************************************************************************
+PRODUCTOS.HTML
+******************************************************************************************
+*/
+
+/* IMAGENES */
+
+/*.materiales{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: justify;
+    width: 95%;
+}
+
+.tamaño{
+    width: 250px;
+    border: 2px solid black;
+}
+
+.tamaño2{
+    width: 225px;
+    background-color: white;
+    border: 2px solid black;
+}*/
+
+#bomba-hidraulica{
+    width: 200px;
+}
+
+#mangueras{
+    width: 230px;
+}
+
+/* TEXTO */
+
+#detalles{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.titulo{
+    margin-right: 130px;
+    margin-left: 120px;
+    font-size: 20px;
+}
+
+p{
+    color:white ;
+}
+
+
+/* 
+******************************************************************************************
+SERVICIOS.HTML
+******************************************************************************************
+*/
+
+#servicios{
+    color: white;
+    padding-top: 50px;
+    text-align: justify;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 90%;
+}
+
+#servicios ol{
+    padding: 5px;
+    background-color: black;
+}
+
+.somos{
+    padding: 15px;
+    color: black;
+    background-color: white;
+}
+
+
+
+
+/* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡PELIGRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+/* PRUEBA MEDIA QUERIES */
+
+/* nota: todavía no quiero hacer funcionar los mediaqueries sin solucionar el problema del espaciado a la derecha en la página de "products": primero quiero estructurar adecuadamnente el proyecto general */
+
+@media (max-width: 479px){
+
+    #whatsapp{
+        width: 20%;
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+@media (min-width: 480px) and (max-width: 539px){
+
+    #whatsapp{
+        width: 20%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+
+@media (min-width: 540px) and (max-width: 719px){
+
+    #whatsapp{
+        width: 16%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+@media (min-width: 720px) and (max-width: 1023px){
+
+    #whatsapp{
+        width: 12%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+@media (min-width: 1024px) and (max-width: 1279px){
+
+    #whatsapp{
+        width: 5%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+@media (min-width: 1280px){
+
+    #whatsapp{
+        width: 5%;
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        transition: all 0.5s;
+    }
+
+}
+
+/*  fin prueba media query */
+
+
+/* CAROUSEL */
+.carousel, .carousel-inner > .item {
+    width: 60%;
+    margin-top: 2%;
+}
+
+.carousel h5{
+    color: black;
+    font-size: xx-large;
+    font-weight: bold;
+    border-bottom: 2px solid black;
+}
+
+/* ACCORDION */
+.accordion{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.accordion-button{
+    font-weight: bold;
+}
