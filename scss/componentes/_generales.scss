@@ -5,248 +5,8 @@
     font-family: Calibri;
 }
 
-
-/* 
-******************************************************************************************
-INDEX
-******************************************************************************************
-*/
-
-
-/* HEADER */
-
-#logo{
-    width: 100px;
-    background: none;
-    position: relative;
-}
-
-header{
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-.link{
-    background: none;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 2%;
-    list-style: none;
-    transition: all 0.5s;
-}
-
-.link a{
-    color: white;
-}
-
-.items{
-    width: 100%;
-    height: 50px;
-    display: flex;
-    text-align: center;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-}
-
-.link-container{
-    display: flex;
-    align-items: center;
-    background-color: black;
-}
-
-
-/* hover de links*/
-.link:hover{
-    transform: scale(1.2);
-}
-
-/* MAIN */
-
-.index-body{
-    background-image: url(images/fondo1.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.index-container{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-.quienessomos{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 30%;
-    position: absolute;
-    top: 90px;
-    margin: 10px;
-    right: 5%;
-    text-align: center;
-    background-color: rgb(44, 44, 44);
-}
-
-.parrafos p{
-    color: white;
-    font-size: x-large;
-}
-
-h1{
-    color: black;
-    text-align: center;
-    background-color: white;
-    width: 100%;
-    font-weight: bold;
-    border-radius: 5px;
-}
-
-.text{
-    margin: 8%;
-    border: none;
-    border-bottom: 2px solid white;
-    background: none;
-    color: white;
-    width: 110%;
-}
-
-::placeholder{
-    color: white;
-}
-
-#consulta{
-    text-align: center;
-}
-
-#enviar{
-    width: 100%;
-    height: 40px;
-    margin: 8%;
-    background-color: yellow;
-    transition: all 0.5s;
-}
-
-#enviar:hover{
-    transform: scale(1.1);
-}
-
-/* FOOTER */
-
-#whatsapp:hover{
-    transform: scale(1.2);
-}
-
-/* 
-******************************************************************************************
-CONTACTO.HTML
-******************************************************************************************
-*/
-
-main{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 5%;
-}
-
-main ul li{
-    margin: 15px;
-    list-style: none;
-    text-align: center;
-    width: 107%;
-    padding: 20px;
-    font-weight: bold;
-    font-family: Calibri;
-    background-color: white;
-}
-
-#contacto{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 18px;
-}
-
-#phone-icon{
-    width: 28px;
-    position: relative;
-    top: 10px;
-    right: 12px;
-    background-color: none;
-}
-
-#email-icon{
-    width: 30px;
-    position: relative;
-    top: 10px;
-    right: 12px;
-    background-color: none;
-}
-
-/* 
-******************************************************************************************
-PRODUCTOS.HTML
-******************************************************************************************
-
-/* TEXTO */
-
-#detalles{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-
-.titulo{
-    margin-right: 130px;
-    margin-left: 120px;
-    font-size: 20px;
-}
-
-p{
-    color:white ;
-}
-
-/* 
-******************************************************************************************
-SERVICIOS.HTML
-******************************************************************************************
-*/
-
-.servicios{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 60%;
-    position: absolute;
-    top: 15%;
-    
-}
-
-.accordion{
-    text-align: center;
-    width: 100%;
-}
-
-.accordion-button{
-    font-weight: bold;
-    font-size: 20px;
-}
-
 /* ¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡¡PELIGRO!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 /* PRUEBA MEDIA QUERIES */
-
-/* nota: todavía no quiero hacer funcionar los mediaqueries sin solucionar el problema del espaciado a la derecha en la página de "products": primero quiero estructurar adecuadamnente el proyecto general */
 
 @media (max-width: 479px){
 
@@ -301,7 +61,7 @@ SERVICIOS.HTML
     }
 
     #whatsapp{
-        width: 15%;
+        width: 10%;
         position: fixed;
         bottom: 10px;
         left: 10px;
@@ -359,7 +119,7 @@ SERVICIOS.HTML
         background-color: rgb(44, 44, 44);
         padding: 3%;
         color: white;
-        width: 45%;
+        width: 40%;
     
         /* provisorio*/
         position: fixed;
@@ -443,7 +203,7 @@ SERVICIOS.HTML
     background-color: rgb(44, 44, 44);
     padding: 3%;
     color: white;
-    width: 25%;
+    width: 23%;
 
     /* provisorio*/
     position: fixed;
@@ -485,7 +245,7 @@ SERVICIOS.HTML
         background-color: rgb(44, 44, 44);
         padding: 3%;
         color: white;
-        width: 25%;
+        width: 23%;
 
         /* provisorio*/
         position: fixed;
@@ -509,4 +269,8 @@ SERVICIOS.HTML
     font-size: xx-large;
     font-weight: bold;
     border-bottom: 2px solid black;
+}
+
+body{
+    background-color: rgb(44, 44, 44);
 }
